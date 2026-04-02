@@ -1,0 +1,108 @@
+/* ===== MINIMAL CUSTOM CSS - SMKN 3 Metro Simplified ===== */
+
+/* Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0f1f3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+#preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 4px solid rgba(255,255,255,0.15);
+  border-top-color: #f59e0b;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Navbar brand logo size */
+.navbar .navbar-brand img {
+  height: 40px;
+  width: 40px;
+}
+
+/* Hero background image */
+.hero-bg {
+  background: url('https://images.unsplash.com/photo-1562774053-701939374585?w=1920&q=80') center/cover no-repeat;
+}
+
+/* Page header background */
+.page-header-bg {
+  background: url('https://images.unsplash.com/photo-1562774053-701939374585?w=1920&q=80') center/cover no-repeat;
+}
+
+/* Footer link list unstyled */
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+}
+.footer-links li {
+  margin-bottom: 8px;
+}
+.footer-links a {
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: #fbbf24;
+}
+
+/* Org chart avatar */
+.org-avatar {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+/* Gallery item images */
+.gallery-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Facility image */
+.facility-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+.facility-img-lg {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* News card image */
+.news-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Headmaster photo */
+.headmaster-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Login section min height */
+.login-section {
+  min-height: 100vh;
+}
